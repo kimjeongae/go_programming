@@ -2,11 +2,17 @@ package main
 
 import (
 	"fmt"
-
-	"github.com/study01/learngo/something"
+	"strings"
 )
 
+func lenAndUpper(name string) (length int, uppercase string) {
+	defer fmt.Println("I'm done")
+	length = len(name)
+	uppercase = strings.ToUpper(name)
+	return
+}
+
 func main() {
-	fmt.Println("aa")
-	something.SayHello()
+	totalLength, name := lenAndUpper("kja")
+	fmt.Println(totalLength, name)
 }
