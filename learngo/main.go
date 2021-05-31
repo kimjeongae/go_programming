@@ -3,8 +3,8 @@ package main
 import "fmt"
 
 func main() {
-	a := 2
-	b := &a
-	*b = 20
-	fmt.Println(a)
+	nico := map[string]string{"name": "aaa", "age": "20"}
+	for _, value := range nico {
+		fmt.Println(value)
+	}
 }
