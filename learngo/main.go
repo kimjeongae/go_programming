@@ -1,16 +1,10 @@
 package main
 
-import (
-	"fmt"
-)
-
-func canIDrink(age int) bool {
-	if koreanAge := age + 2; koreanAge < 18 {
-		return false
-	}
-	return true
-}
+import "fmt"
 
 func main() {
-	fmt.Println(canIDrink(15))
+	a := 2
+	b := &a
+	*b = 20
+	fmt.Println(a)
 }
